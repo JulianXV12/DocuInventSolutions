@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="Diseño_Compartido.css" Type="text/css" media="all"/>
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    <h1>Iniciar Sesión</h1>
+    <form onsubmit="return validarLogin()">
+  <div class="input-group">
+    <label for="usuario">Correo electrónico o usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+  </div>
+  <div class="input-group">
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+  </div>
+  <div class="options">
+    <button type="submit">Ingresar</button>
+  </div>
+  <div class="options">
+    <a href="../Codificación en HTML/Recuperar_Contraseña.html">¿Olvidó su contraseña?</a>
+    <a href="../Codificación en HTML/Registro_de_Usuario.html">Registrarse</a>
+  </div>
+</form>
+
+ <script>
+  function validarLogin() {
+    const usuario = document.getElementById("usuario").value;
+    const contrasena = document.getElementById("contrasena").value;
+
+    if (usuario === "admin" && contrasena === "1234") {
+      alert("Inicio de sesión exitoso.");
+      window.location.href = "../Codificación en HTML/Inicio_o_Panel_principal.html"; // Redirige al panel
+      return false; // Previene el envío real del formulario
+    } else {
+      alert("Usuario o contraseña incorrectos.");
+      return false;
+    }
+  }
+</script>
+
+</body>
+</html>

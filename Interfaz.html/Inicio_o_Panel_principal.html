@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Principal </title>
+  <link rel="stylesheet" href="Diseño_Panel_Principal.css">  
+</head>
+<body>
+  <header class="top-bar">
+    <div class="header-content">
+      <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+      
+      <div class="iconos">
+        <button class="icono">❓</button>
+        <button class="icono">👤</button>
+      </div>
+    </div>
+    <nav class="nav-bar">
+      <a href="../Codificación en HTML/Servicios_en_oferta.html"><button>Servicios</button></a>
+      <a href="../Codificación en HTML/Precio_y_Tarifas.html"><button>Precios</button></a>
+      <a href="../Codificación en HTML/Blog.html"><button>Blog</button></a>
+      <a href="../Codificación en HTML/Contactanos.html"><button>Contacto</button></a>
+      <a href="../Codificación en HTML/Inicio_de_Sesión.html"><button>Cerrar Sesión</button></a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="banner">
+      <img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions.jpg" alt="Imagen ilustrativa">
+    </div>
+
+    <button class="demo-button">Solicitar una Demo</button>
+
+    <div class="content-area">
+      <div class="video-section">
+        <div class="video-placeholder">▶</div>
+        <p><strong>Testimonios:</strong><br>DocuInvent Solutions ha transformado nuestra gestión</p>
+      </div>
+      <div class="benefits-section">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Mejora la organización</li>
+          <li>Acceso rápido a documentos</li>
+          <li>Optimiza el almacenamiento</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <span>○</span>
+        <span>○</span>
+        <span>○</span>
+      </div>
+      <a href="mailto:DocuInventSolutions@gmail.com">DocuInventSolutions@gmail.com</a>
+    </footer>
+  </main>
+</body>
+<script>
+  document.querySelector('.demo-button').addEventListener('click', () => {
+    alert("Gracias por solicitar una demo. Pronto nos pondremos en contacto.");
+  });
+</script>
+</html>

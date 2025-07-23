@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificación de Código </title>
+  <link rel="stylesheet" href="Diseño_Compartido.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    <h1>Verificación de Código</h1>
+    <p>Hemos enviado un código a tu correo electrónico. Por favor, ingrésalo para continuar.</p>
+    <form onsubmit="return verificarCodigo()">
+      <div class="input-group">
+        <label for="codigo">Código de verificación:</label>
+        <input type="text" id="codigo" name="codigo" required>
+      </div>
+      <button type="submit">Verificar Código</button>
+      <div class="options">
+        <a href="#" onclick="reenviarCodigo()">¿No recibiste el código? Reenviar</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function verificarCodigo() {
+      const codigo = document.getElementById("codigo").value;
+      if (codigo === "123456") { // Simulación
+        alert("Código verificado correctamente. Redirigiendo...");
+       window.location.href = "../Codificación en HTML/Crear_Nueva_Contraseña.html"; // Redirige a contraseña nueva
+       return false; // Para no recargar la página
+      } else {
+        alert("Código incorrecto. Inténtalo nuevamente.");
+      }
+      return false;
+    }
+
+    function reenviarCodigo() {
+      alert("Se ha reenviado el código a tu correo.");
+    }
+  </script>
+</body>
+</html>

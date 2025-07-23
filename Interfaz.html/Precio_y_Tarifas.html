@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planes y Tarifas </title>
+  <link rel="stylesheet" href="Diseño_Precios.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="logo-container">
+      <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    </div>
+    <div class="iconos">
+      <button class="icono">❓</button>
+      <button class="icono">👤</button>
+    </div>
+  </header>
+ 
+  <nav class="menu-navegacion">
+    <a href="../Codificación en HTML/Inicio_o_Panel_principal.html"><button>Inicio</button></a>
+    <a href="../Codificación en HTML/Servicios_en_oferta.html"><button>Servicios</button></a>
+    <a href="../Codificación en HTML/Precio_y_Tarifas.html"><button>Precios</button></a>
+    <a href="../Codificación en HTML/Blog.html"><button>Blog</button></a>
+    <a href="../Codificación en HTML/Contactanos.html"><button>Contacto</button></a>
+    <a href="../Codificación en HTML/Inicio_de_Sesión.html"><button>Cerrar Sesión</button></a>
+  </nav>
+ 
+  <main class="contenedor-precios">
+    <h2>Planes y Tarifas</h2>
+
+    <table class="tabla-precios">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Básico</th>
+          <th>Profesional</th>
+          <th>Empresarial</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Precio</td>
+          <td>$10/mes</td>
+          <td>$30/mes</td>
+          <td>$50/mes</td>
+        </tr>
+        <tr>
+          <td>Características</td>
+          <td>
+            Caract 1<br>
+            Caract 2<br>
+            Caract 3
+          </td>
+          <td>
+            Caract 1<br>
+            Caract 2<br>
+            Caract 3
+          </td>
+          <td>
+            Caract 1<br>
+            Caract 2<br>
+            Caract 3
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boton-container">
+      <button class="empe-button">Empezar ahora</button>
+    </div>
+  </main>
+</body>
+<script>
+  document.querySelector('.empe-button').addEventListener('click', () => {
+    alert("Pronto nos pondremos en contacto.");
+  });
+</script>
+</html>

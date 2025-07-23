@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro </title>
+  <link rel="stylesheet" href="Diseño_Compartido.css" >
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    <h1>Registro de Usuario</h1>
+    <form id="formRegistro">
+      <div class="input-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="input-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <div class="input-group">
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+      </div>
+      <div class="input-group">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+      </div>
+      <div class="input-group">
+        <label for="confirmar">Confirmar contraseña:</label>
+        <input type="password" id="confirmar" name="confirmar" required>
+      </div>
+      <button type="submit">Registrarse</button>
+      <div class="options">
+        <a href="../Codificación en HTML/Inicio_de_Sesión.html">¿Ya tienes cuenta? Inicia sesión</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validarRegistro() {
+      const nombre = document.getElementById("nombre").value;
+      const correo = document.getElementById("correo").value;
+      const usuario = document.getElementById("usuario").value;
+      const contrasena = document.getElementById("contrasena").value;
+      const confirmar = document.getElementById("confirmar").value;
+
+      if (contrasena !== confirmar) {
+        alert("Las contraseñas no coinciden.");
+        return false;
+      } else {
+      alert("Registro exitoso.");
+       window.location.href = "../Codificación en HTML/Inicio_de_Sesión.html"; // Redirige al inicio de sesion
+      return false;
+      }
+    }
+  </script>
+
+</body>
+</html>

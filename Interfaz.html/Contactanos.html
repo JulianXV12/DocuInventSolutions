@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos </title>
+  <link rel="stylesheet" href="Diseño_Contacto.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="logo-titulo">
+      <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    </div>
+      <div class="iconos">
+      <button class="icono">❓</button>
+      <button class="icono">👤</button>
+    </div>
+  </header>
+
+<nav class="menu-navegacion">
+      <a href="../Codificación en HTML/Inicio_o_Panel_principal.html"><button>Inicio</button></a>
+      <a href="../Codificación en HTML/Servicios_en_oferta.html"><button>Servicios</button></a>
+      <a href="../Codificación en HTML/Precio_y_Tarifas.html"><button>Precios</button></a>
+      <a href="../Codificación en HTML/Blog.html"><button>Blog</button></a>
+      <a href="../Codificación en HTML/Contactanos.html"><button>Contacto</button></a>
+      <a href="../Codificación en HTML/Inicio_de_Sesión.html"><button>Cerrar Sesión</button></a>
+    </nav>
+
+  <main>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes dudas? ¡Estamos para ayudarte!</p>
+
+      <div class="contenedor-contacto">
+        <form class="formulario">
+          <input type="text" placeholder="Nombre.." required>
+          <input type="email" placeholder="Correo Electrónico.." required>
+          <input type="text" placeholder="Asunto.." required>
+          <textarea placeholder="Texto" rows="6" required></textarea>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <div class="info-contacto">
+          <p><img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoUbicacion.jpg" alt="Ubicación" class="icono-img"> Dirección</p>
+          <p><img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoTelefono.jpg" alt="Teléfono" class="icono-img"> 312 4071239</p>
+          <p><img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoReloj.jpg" alt="Horario" class="icono-img"> Horario de Oficina</p>
+
+          <div class="redes">
+            <div class="red">
+              <img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoFacebook.jpg" alt="Facebook">
+              <span>DocuInventSolutions_</span>
+            </div>
+            <div class="red">
+              <img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoXTwitter.jpg" alt="Twitter">
+              <span>DocuInvent Solutions</span>
+            </div>
+            <div class="red">
+              <img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoInstagram.jpg" alt="Instagram">
+              <span>DocuInventSolutions_</span>
+            </div>
+          </div>
+
+          <p class="correo">
+            <img src="../Codificación en HTML/Imagenes/Img ilustrativa DocuInvent Solutions iconoEmail.jpg" alt="Correo" class="icono-img">
+            <a href="mailto:DocuInventSolutions@gmail.com">DocuInventSolutions@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+<script>
+  document.querySelector('.mensj-button').addEventListener('click', () => {
+    alert("Mensaje enviado.");
+  });
+</script>
+</html>

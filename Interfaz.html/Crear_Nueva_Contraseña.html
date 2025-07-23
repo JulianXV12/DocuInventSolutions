@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Nueva Contraseña </title>
+  <link rel="stylesheet" href="Diseño_Compartido.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    <h1>Crear Nueva Contraseña</h1>
+    <p>Por favor, ingresa tu nueva contraseña para continuar.</p>
+    <form onsubmit="return guardarNuevaContrasena()">
+      <div class="input-group">
+        <label for="nueva">Nueva Contraseña:</label>
+        <input type="password" id="nueva" name="nueva" required>
+      </div>
+      <div class="input-group">
+        <label for="confirmar">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar" name="confirmar" required>
+      </div>
+      <button type="submit">Guardar Contraseña</button>
+    </form>
+  </div>
+
+  <script>
+    function guardarNuevaContrasena() {
+      const nueva = document.getElementById("nueva").value;
+      const confirmar = document.getElementById("confirmar").value;
+
+      if (nueva !== confirmar) {
+        alert("Las contraseñas no coinciden. Inténtalo nuevamente.");
+        return false;
+      }
+
+      alert("¡Contraseña actualizada con éxito!");
+      window.location.href = "../Codificación en HTML/Inicio_de_Sesión.html"; // Redirige a inicio de sesión
+      return false;
+    }
+  </script>
+</body>
+</html>

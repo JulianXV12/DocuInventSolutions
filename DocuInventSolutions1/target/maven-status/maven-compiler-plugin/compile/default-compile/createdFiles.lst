@@ -1,0 +1,7 @@
+com\mycompany\docuinventsolutions\controlador\LoginServlet.class
+com\mycompany\docuinventsolutions\modelo\Usuario.class
+com\mycompany\docuinventsolutions\controlador\LogoutServlet.class
+com\mycompany\docuinventsolutions\JakartaRestConfiguration.class
+com\mycompany\docuinventsolutions\resources\JakartaEE11Resource.class
+com\mycompany\docuinventsolutions\util\ConexionBD.class
+com\mycompany\docuinventsolutions\dao\UsuarioDAO.class

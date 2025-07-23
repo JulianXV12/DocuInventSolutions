@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="Diseño_Compartido.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../Codificación en HTML/Imagenes/DocuInvent Solutions.jpg" alt="Logo DocuInvent Solutions" class="logo">
+    <h1>Recuperar Contraseña</h1>
+    <form onsubmit="return enviarCodigo()">
+      <div class="input-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <button type="submit">Enviar código de recuperación</button>
+      <div class="submit-message">
+        <a href="../Codificación en HTML/Registro de Usuario.html"></a>
+      </div>
+      <div class="options">
+        <a href="../Codificación en HTML/Inicio_de_Sesión.html">¿Recordaste tu contraseña? Inicia sesión</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function enviarCodigo() {
+      const correo = document.getElementById("correo").value;
+      alert("Se ha enviado un código de recuperación al correo: " + correo);
+       window.location.href = "../Codificación en HTML/Código_de_Verificación.html"; // Redirige al verificar el codigo
+      return false; // Para no recargar la página
+    }
+  </script>
+</body>
+</html>

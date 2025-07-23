@@ -1,0 +1,11 @@
+com\mycompany\docuinventsolutions\controlador\LoginServlet.class
+com\mycompany\docuinventsolutions\modelo\Usuario.class
+<<<<<<< HEAD
+com\mycompany\docuinventsolutions\controlador\RecuperarContrasenaServlet.class
+=======
+com\mycompany\docuinventsolutions\controlador\LogoutServlet.class
+>>>>>>> 280b4005c119b5db1f9a6a6f01a7f9590ac88c4f
+com\mycompany\docuinventsolutions\JakartaRestConfiguration.class
+com\mycompany\docuinventsolutions\resources\JakartaEE11Resource.class
+com\mycompany\docuinventsolutions\util\ConexionBD.class
+com\mycompany\docuinventsolutions\dao\UsuarioDAO.class
